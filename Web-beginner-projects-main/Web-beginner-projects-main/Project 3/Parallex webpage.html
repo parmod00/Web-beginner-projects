@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallex Webpage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        *::-webkit-scrollbar {
+            width: 0px;
+        }
+        #container{
+            background: url(backimg.jpg) fixed center;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .content{
+            height: 100vh;
+            width: 100vw;
+        }
+        .header{
+            height: 80vh;
+        }
+        .header p{  
+            width: fit-content;
+            color: white;
+            font-size: large;
+            background-color: rgba(7, 170, 7, 0.5);
+            position: relative;
+            top: 50%;
+            left: 45%;
+            border-radius: 5px;
+            padding: 5px;
+            font-weight: bolder;
+        }
+        .footer{
+            height: 20%;
+            background-color: rgba(7, 170, 7, 0.5);;
+        }
+        .footer p{
+            width: 100%;
+            height: fit-content;
+            color: white;
+            font-weight: bold;   
+            padding: 10px;
+        }
+        #background{
+            background: url(centerimg.jpg) fixed center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <div class="header">
+                <p>
+                    Parallex Webpage
+                </p>
+            </div>
+            <div class="footer">
+                <p>
+                    A parallax website includes fixed images in the background that is kept in 
+                    place and user can scroll down the page to see different parts of the image. 
+                    In this article, we are creating a parallax webpage using HTML and CSS. 
+                    A parallax website includes fixed images in the background that is kept in place 
+                    and user can scroll down the page to see different parts of the image. 
+                    In this article, we are creating a parallax webpage using HTML and CSS.
+                </p>
+            </div>
+        </div>
+        <div class="content" id="background">
+            <div class="header">
+                <p>
+                    Projects
+                </p>
+            </div>
+            <div class="footer">
+                <p>
+                    ☀ Calendar ☀  
+                    Tic-Tac-Toe ☀  
+                    Quiz Game ☀  
+                    Survey Form ☀  
+                    Chat Bot in C ☀  
+                    Tribute Webpage ☀  
+                    Portfolio Website ☀  
+                    Guess the Number ☀  
+                    Rock Paper Scissor ☀ 
+                    To-Do List using JS ☀  
+                    Notes Taker using JS ☀  
+                    BMI Calculator using JS ☀ 
+                    Loan Calculator using JS ☀  
+                    Travel Management System ☀  
+                    Random Password Generator ☀  
+                    Different Management Systems
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header">
+                <p>
+                    Achievements
+                </p>
+            </div>
+            <div class="footer">
+                <p>
+                    ☀ Technical Content Writer ☀
+                    Intern at GeeksForGeeks ☀
+                    Microsoft Learn Student Ambassador - Beta ☀  
+                    Participant in GirlScript Summer of Code 2021 ☀  
+                    Mentored HackTX Hackathon
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

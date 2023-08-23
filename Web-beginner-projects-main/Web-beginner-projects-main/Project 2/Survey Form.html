@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: mediumvioletred;
+        }
+        #container{
+            margin: 20px 0;
+        }
+        form{
+            display: block;
+            width: 50vw;
+            margin: 15px auto;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px black;
+        }
+        h1{
+            text-align: center;
+            margin: 10px 0;
+        }
+        label{
+            display: block;
+            margin: 10px;
+        }
+        #name, #email, #age{
+            display: block;
+            height: 25px;
+            padding: 0 10px;
+            width: 45vw;
+            margin-top: 5px;
+        }
+        p{
+            margin: 10px;
+        }
+        select{
+            width: 46.5vw;
+            margin: 0 10px;
+            padding: 5px 10px;
+        }
+        .language{
+            margin-right: 10px;
+        }
+        textarea{
+            margin: 0 10px;
+            padding: 0 10px;
+            width: 45vw;
+        }
+        #submit{
+            cursor: pointer;
+            display: block;
+            margin: 10px;
+            padding: 10px 10px;
+            width: 47vw;
+            font-size: larger;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            background-color: royalblue;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Survey Form</h1>
+        <form method="post" action="http://www.google.com">
+            <label for="name">
+                Name<input type="text" name="name" id="name" placeholder="Enter your name">
+            </label>
+            
+            <label for="email">
+                E-mail<input type="email" name="email" id="email" placeholder="Enter your E-mail">
+            </label>
+            
+            <label for="age">
+                Age<input max="70" min="25" type="number" name="age" id="age" placeholder="Enter your Age">
+            </label>
+            <p>Which option best describe you?</p>
+            <select name="profession" id="profession">
+                <option value="Student" name="student">Student</option>
+                <option value="Manager" name="manager">Manager</option>
+                <option value="IT Professional" name="it professional">IT Professional</option>
+                <option value="Worker" name="worker">Worker</option>
+            </select>
+            <p>Language and Framework known(Check for apply)</p>
+            <label for="c">
+                <input type="checkbox" checked name="language" value="C" class="language" id="c">C
+            </label>
+            
+            <label for="c++">
+                <input type="checkbox" name="language" value="C++" class="language" id="c++">C++
+            </label>
+        
+            <label for="java">
+                <input type="checkbox" name="language" value="Java" class="language" id="java">Java
+            </label>
+            
+            <label for="html">
+                <input type="checkbox" name="language" value="HTML" class="language" id="html">HTML
+            </label>
+            
+            <label for="css">
+                <input type="checkbox" name="language" value="CSS" class="language" id="css">CSS
+            </label>
+
+            <label for="python">
+                <input type="checkbox" name="language" value="Python" class="language" id="python">Python
+            </label>
+            <p>Any comments or suggestions</p>
+            <textarea name="comment" id="comment" cols="70" rows="5" placeholder="Enter comments or suggestion"></textarea>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
